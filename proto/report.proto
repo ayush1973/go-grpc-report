@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package report;
+
+option go_package = "go-grpc-report/proto;proto";
+
+service ReportService {
+  rpc GenerateReport (UserRequest) returns (ReportResponse);
+  rpc HealthCheck (HealthRequest) returns (HealthResponse);
+}
+
+message UserRequest {
+  string userId = 1;
+}
+
+message ReportResponse {
+  string reportId = 1;
+}
+
+message HealthRequest {}
+
+message HealthResponse {
+  string status = 1;
+}
