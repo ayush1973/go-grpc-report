@@ -1,4 +1,4 @@
-# Go gRPC Report Service with Cron Job
+#  go-grpc-report
 
 This project implements a gRPC-based report generation service in Go. It periodically generates reports for predefined users using a cron job.
 
@@ -17,6 +17,4 @@ This project implements a gRPC-based report generation service in Go. It periodi
 ```bash
 cd go-grpc-report
 go mod tidy
-
-run the gRPC server 
-go run main.go 
+go run main.go
